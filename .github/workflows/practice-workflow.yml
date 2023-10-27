@@ -1,5 +1,5 @@
 name: Primeiro Workflow
-on: [push, workflows_dispatch]
+on: [push, workflow_dispatch]
 jobs:
   lint-verify:
     runs-on: ubuntu-latest
