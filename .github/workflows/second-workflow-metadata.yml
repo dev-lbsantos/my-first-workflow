@@ -1,0 +1,11 @@
+name: Using metadata to get issues
+on:
+  issues:
+    types:
+      - opened
+jobs:
+  Echo-Issues:
+    runs-on: ubuntu-latest
+    steps:
+      name: Output Issues
+      run: echo ${{ toJSON(github) }}
